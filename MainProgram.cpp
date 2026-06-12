@@ -83,8 +83,8 @@ public:
 
     // TODO 4c: return the item at index; throw std::out_of_range if invalid
     T get(int index) const {
-        if (index < 0 || index >= size());
-        throw std::out_of_range("Box index out of range");
+        if (index < 0 || index >= size())
+            throw std::out_of_range("Box index out of range");
         return items_[index]; // <-- replace
     }
 
